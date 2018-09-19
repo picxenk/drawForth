@@ -218,6 +218,13 @@ function addPredefinedWords(addToDictionary, readLines, next) {
     // context.stack.push(y);
   });
 
+  addToDictionary("triangle", function (context) {
+    var y3 = context.stack.pop(), x3 = context.stack.pop();
+    var y2 = context.stack.pop(), x2 = context.stack.pop();
+    var y1 = context.stack.pop(), x1 = context.stack.pop();
+    context.canvas.triangle(x1, y1, x2, y2, x3, y3);
+  });
+
   addToDictionary("circle", function (context) {
     var r = context.stack.pop()
     var y = context.stack.pop(), x = context.stack.pop();
@@ -261,8 +268,9 @@ function addPredefinedWords(addToDictionary, readLines, next) {
     ": 높이 height ;",
     ": 쉬기 sleep ;",
     ": 색 color ;",
-    ": 난수 random ;",
-    ": 주사위 random ;",
+    ": 난수 over - random + ;",
+    ": dice random 1 + ;",
+    ": 주사위 dice ;",
     ": 지우기 clear ;",
     ": 배경색 238 238 238 색 ;",
     ": 배경채우기 background ;",
@@ -270,11 +278,16 @@ function addPredefinedWords(addToDictionary, readLines, next) {
     ": 선 line ;",
     ": 선두께 lineWidth ;",
     ": 사각형 rectangle ;",
+    ": 삼각형 triangle ;",
 
     ": 안녕 .\" 안녕! 만나서 반가워용 ;)\" ;",
     ": hello .\" Hello~~ good to see you\" ;",
     ": hi .\" hi! how are you?\" ;",
+
     ": 김승범 .\" 제 사부님입니다\" ;",
     ": 언메이크랩 .\" 제가 태어날 계기를 만들어줬어요\" ;",
+    ": unmakelab 언메이크랩 ;",
+    ": PROTOROOM .\" 후니다킴, 김승범으로 이뤄진 메타미디어 콜렉티브\" 200 0 0 color 150 50 3 circle 350 50 3 circle ;",
+    ": 프로토룸 PROTOROOM ;",
   ], next);
 }

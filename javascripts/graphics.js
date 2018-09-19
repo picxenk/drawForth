@@ -58,6 +58,14 @@ function Graphics($canvas) {
     ctx.fillRect(x, y, w, h);
   }
 
+  function triangle(x1, y1, x2, y2, x3, y3) {
+    ctx.beginPath();
+    ctx.moveTo(x1, y2);
+    ctx.lineTo(x2, y2);
+    ctx.lineTo(x3, y3);
+    ctx.fill();
+  }
+
   function circle(x, y, r) {
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI*2, true);
@@ -72,6 +80,7 @@ function Graphics($canvas) {
     line: line,
     lineWidth: lineWidth,
     rectangle: rectangle,
+    triangle: triangle,
     circle: circle
   };
 }
