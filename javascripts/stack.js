@@ -1,5 +1,5 @@
 function StackUnderflowError() {
-  this.message = "Stack underflow";
+  this.message = "값이 더 필요해요 (Stack underflow)";
 }
 
 function Stack(name) {
