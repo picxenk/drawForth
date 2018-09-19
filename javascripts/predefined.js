@@ -268,7 +268,7 @@ function addPredefinedWords(addToDictionary, readLines, next) {
     ": 높이 height ;",
     ": 쉬기 sleep ;",
     ": 색 color ;",
-    ": 난수 over - random + ;",
+    ": 난수 over - 1 + random + ;",
     ": dice random 1 + ;",
     ": 주사위 dice ;",
     ": 지우기 clear ;",
