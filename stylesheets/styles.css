@@ -136,9 +136,10 @@ hr {
 
 footer {
   width:270px;
-  float:left;
   position:fixed;
-  bottom:50px;
+  top: 500px;
+  left: 895px;
+  font-size: 12px;
 }
 
 .toc {
