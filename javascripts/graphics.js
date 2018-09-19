@@ -32,10 +32,10 @@ function Graphics($canvas) {
   }
 
   function clear() {
-    ctx.fillStyle = "#eee";
+    ctx.fillStyle = "#f7f3e8";
     ctx.fillRect(0, 0, width, height);
-    ctx.fillStyle = "#999";
-    ctx.strokeStyle = "#999";
+    ctx.fillStyle = "#EDC6AA";
+    ctx.strokeStyle = "#EDC6AA";
   }
 
   function background() {

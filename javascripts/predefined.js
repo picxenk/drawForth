@@ -272,7 +272,7 @@ function addPredefinedWords(addToDictionary, readLines, next) {
     ": dice random 1 + ;",
     ": 주사위 dice ;",
     ": 지우기 clear ;",
-    ": 배경색 238 238 238 색 ;",
+    ": 배경색 247 243 232 색 ;",
     ": 배경채우기 background ;",
     ": 원 circle ;",
     ": 선 line ;",
