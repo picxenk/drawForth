@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>May the Forth be with you</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/editor.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+  </head>
+  <body>
+    <div class="wrapper">
+
+          <canvas class="canvas" width="500" height="500"></canvas>
+      <section>
+
+        <!-- <div class="editor editor-text {{ include.size }} {% if include.canvas %}has-canvas{% endif %}"> -->
+        <div class="editor editor-text has-canvas">
+          <!-- <div class="stack-viewer">&nbsp;</div> -->
+          <textarea class="stack-viewer"></textarea>
+          <div class="text">
+            <div class="prev-lines"></div>
+            <!-- <textarea class="input editor-text">{% if include.game %}{% include snake.forth %}{% endif %}</textarea> -->
+            <textarea class="input editor-text" autofocus> </textarea>
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <footer>
+      </footer>
+    </div>
+
+    <script src="javascripts/jquery-2.1.4.js"></script>
+    <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/stack.js"></script>
+    <script src="javascripts/dictionary.js"></script>
+    <script src="javascripts/memory.js"></script>
+    <script src="javascripts/tokenizer.js"></script>
+    <script src="javascripts/compiler.js"></script>
+    <script src="javascripts/predefined.js"></script>
+    <script src="javascripts/forth.js"></script>
+    <script src="javascripts/graphics.js"></script>
+    <script src="javascripts/editor.js"></script>
+
+  </body>
+</html>
