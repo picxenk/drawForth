@@ -270,5 +270,11 @@ function addPredefinedWords(addToDictionary, readLines, next) {
     ": 선 line ;",
     ": 선두께 lineWidth ;",
     ": 사각형 rectangle ;",
+
+    ": 안녕 .\" 안녕! 만나서 반가워용 ;)\" ;",
+    ": hello .\" Hello~~ good to see you\" ;",
+    ": hi .\" hi! how are you?\" ;",
+    ": 김승범 .\" 제 사부님입니다\" ;",
+    ": 언메이크랩 .\" 제가 태어날 계기를 만들어줬어요\" ;",
   ], next);
 }
