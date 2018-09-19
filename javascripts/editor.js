@@ -100,11 +100,11 @@ function Editor(selectorOrElement) {
       selectLine();
     }
 
-    if (graphics) {
-      forth.setMemoryHandler(function (address, value, baseAddress) {
-        graphics.drawPixel(address - baseAddress, value);
-      });
-    }
+    // if (graphics) {
+    //   forth.setMemoryHandler(function (address, value, baseAddress) {
+    //     graphics.drawPixel(address - baseAddress, value);
+    //   });
+    // }
 
     $input.on("keydown", function (e) {
       if (inputHidden) { // any time the input is hidden, send keys to forth

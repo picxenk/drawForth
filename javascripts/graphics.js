@@ -17,13 +17,13 @@ function Graphics($canvas) {
   // ctx.fillStyle = "#999";
 
   function drawPixel(offset, value) {
-    var x = offset % widthInBlocks;
-    var y = Math.floor(offset / widthInBlocks);
-
-    var color = value ? 'white' : 'black';
-    ctx.fillStyle = color;
-
-    ctx.fillRect(x * blockSize, y * blockSize, blockSize, blockSize);
+    // var x = offset % widthInBlocks;
+    // var y = Math.floor(offset / widthInBlocks);
+    //
+    // var color = value ? 'white' : 'black';
+    // ctx.fillStyle = color;
+    //
+    // ctx.fillRect(x * blockSize, y * blockSize, blockSize, blockSize);
   }
 
   function setColor(r, g, b) {
