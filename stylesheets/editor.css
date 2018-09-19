@@ -8,7 +8,7 @@
   top: 0px;
   left: 502px;
   padding: 5px;
-  border: 1px solid #888;
+  border: 1px solid #F6AF82;
   margin-bottom: 20px;
   position: fixed;
   z-index: 5;
@@ -44,13 +44,15 @@
 
 .editor .stack {
   padding: 5px;
-  border: 1px solid #888;
+  border: 1px solid #F6AF82;
   margin-bottom: 5px;
 }
 
 .stack-viewer {
   width: 496px;
   resize: none;
+  color: #6C6055;
+  border: 1px solid #F6AF82;
 }
 
 /* This is used in the book for showing the stack */
@@ -80,7 +82,7 @@
   width: 100%;
   border: 0;
   outline: 0;
-  border-bottom: 1px solid #888;
+  border-bottom: 1px solid #F6AF82;
   margin: 0;
   margin-top: 2px; /* hack to make textarea line up with prev-lines paragraph */
   resize: none;
@@ -94,9 +96,9 @@
 }
 
 .code {
-  color: #333;
+  color: #6C6055;
 }
 
 .output {
-  color: #999;
+  color: #bbb;
 }
