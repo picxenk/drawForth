@@ -143,6 +143,15 @@ footer {
   z-index: 10;
 }
 
+.coord {
+  position: fixed;
+  top: 483px;
+  left: 505px;
+  font-size: 4px;
+  color: #999;
+  z-index: 10;
+}
+
 .toc {
   display: none
 }
