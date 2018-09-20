@@ -289,5 +289,6 @@ function addPredefinedWords(addToDictionary, readLines, next) {
     ": unmakelab 언메이크랩 ;",
     ": PROTOROOM .\" 후니다킴, 김승범으로 이뤄진 메타미디어 콜렉티브\" clear 200 0 0 color 150 50 3 circle 350 50 3 circle ;",
     ": 프로토룸 PROTOROOM ;",
+    ": 감사합니다 .\" ♥︎ ♥︎ ♥︎\" ;",
   ], next);
 }
