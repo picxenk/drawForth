@@ -124,6 +124,14 @@ function addPredefinedWords(addToDictionary, readLines, next) {
     context.stack.push(b);
   });
 
+  addToDictionary("third", function (context) {
+    var a = context.stack.pop(), b = context.stack.pop(), c = context.stack.pop();
+    context.stack.push(c);
+    context.stack.push(b);
+    context.stack.push(a);
+    context.stack.push(c);
+  });
+
   addToDictionary("rot", function (context) {
     var a = context.stack.pop(), b = context.stack.pop(), c = context.stack.pop();
     context.stack.push(b);
@@ -245,6 +253,7 @@ function addPredefinedWords(addToDictionary, readLines, next) {
     ": 0>      0 > ;",
     ": ?dup    dup if dup then ;",
     ": 2dup    over over ;",
+    ": 3dup    third third third ;",
     ": 1+      1 + ;",
     ": 1-      1 - ;",
     ": 2+      2 + ;",
