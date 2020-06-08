@@ -30,8 +30,10 @@ before stack | word | after stack
 1 2 | + | 3
 1 2 | dup | 1 2 2
 1 2 | 2dup | 1 2 1 2
+1 2 3 | 3dup | 1 2 3 1 2 3
 1 2 | swap | 2 1
 1 2 | over | 1 2 1
+1 2 3 | third | 1 2 3 1
 1 2 | drop | 1
 1 2 3 | rot | 2 3 1
 2 3 1 | rot | 3 1 2
